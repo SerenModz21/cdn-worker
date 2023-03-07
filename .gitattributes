@@ -1,0 +1,3 @@
+# Auto line endings
+# credits: https://github.com/PreMiD/Presences/blob/main/.gitattributes
+* text=auto eol=lf
