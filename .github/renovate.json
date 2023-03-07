@@ -1,0 +1,4 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["github>Kings-World/.github:renovate-config"]
+}
