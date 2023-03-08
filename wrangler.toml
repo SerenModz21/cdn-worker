@@ -12,8 +12,6 @@ routes = [
     { pattern = "cdn.invaild.me/*", zone_name = "invaild.me" }
 ]
 
-# cdn.invaild.me
-
 kv_namespaces = [
     { binding = "CDN_USERS", id = "913344d345d843299cd1107c52007924", preview_id = "c5d67610a03b481c8822f529d74ad7a1" }
 ]
