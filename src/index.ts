@@ -10,15 +10,6 @@ const app = new Hono<{ Bindings: Env }>();
 
 const cacheControl = "public, max-age=31536000"; // 1 year
 
-app.use(async (c, next) => {
-    try {
-        await next();
-    } catch (e) {
-        const error = e instanceof Error ? e.message : e;
-        return c.json({ success: false, error }, 500);
-    }
-});
-
 app.use(errorMiddleware());
 
 app.get("/", (c) => {
