@@ -210,6 +210,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lifaon/path@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@lifaon/path@npm:2.1.0"
+  checksum: e6cc29824a41c4ed3e5e4d58b3bec962aa2ab3f1c8cdd08d2bd24643344f204c65cc4415a445c20c30fb07b1c1d4baa3b7b6a845ec4d6a56ff5362a52b388f16
+  languageName: node
+  linkType: hard
+
 "@miniflare/cache@npm:2.12.1":
   version: 2.12.1
   resolution: "@miniflare/cache@npm:2.12.1"
@@ -1991,6 +1998,7 @@ __metadata:
   resolution: "worker@workspace:."
   dependencies:
     "@cloudflare/workers-types": ^4.20230307.0
+    "@lifaon/path": ^2.1.0
     hono: ^3.1.1
     nanoid: ^4.0.1
     typescript: ^4.9.5
