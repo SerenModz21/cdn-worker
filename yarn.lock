@@ -1994,11 +1994,11 @@ __metadata:
     hono: ^3.1.1
     nanoid: ^4.0.1
     typescript: ^4.9.5
-    wrangler: ^2.12.1
+    wrangler: ^2.12.3
   languageName: unknown
   linkType: soft
 
-"wrangler@npm:^2.12.1":
+"wrangler@npm:^2.12.3":
   version: 2.12.3
   resolution: "wrangler@npm:2.12.3"
   dependencies:
