@@ -4,12 +4,12 @@ compatibility_date = "2023-03-07"
 send_metrics = false
 
 account_id = "3d314ce955c4f69056e1f4b64842fd55"
-workers_dev = true
+workers_dev = false
 
 routes = [
-    { pattern = "cdn.serenmodz.rocks/*", zone_name = "serenmodz.rocks" },
-    { pattern = "cdn.ghosty.link/*", zone_name = "ghosty.link" },
-    { pattern = "cdn.invaild.me/*", zone_name = "invaild.me" }
+    "cdn.serenmodz.rocks/*",
+    "cdn.ghosty.link/*",
+    "cdn.invaild.me/*"
 ]
 
 kv_namespaces = [

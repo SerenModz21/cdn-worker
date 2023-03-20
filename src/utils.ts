@@ -1,12 +1,15 @@
 import type { MiddlewareHandler } from "hono";
+import { Toucan } from "toucan-js"
 
 export type Options = {
     Bindings: {
         MY_BUCKET: R2Bucket;
         CDN_USERS: KVNamespace;
+        SENTRY_DSN: string;
     };
     Variables: {
         user: string;
+        sentry: Toucan;
     };
 };
 
@@ -62,4 +65,38 @@ export function cache(): Middleware {
 
         c.executionCtx.waitUntil(cache.put(key, c.res.clone()));
     };
+}
+
+export function sentry(): Middleware {
+    return async (c, next) => {
+        if (!c.env.SENTRY_DSN) return next();
+
+        let hasExecutionContext = true
+
+        try {
+            c.executionCtx
+        } catch {
+            hasExecutionContext = false
+        }
+
+        const sentry = new Toucan({
+            dsn: c.env.SENTRY_DSN,
+            request: c.req.raw,
+            context: hasExecutionContext ? c.executionCtx : undefined,
+        });
+
+        const userAgent = c.req.header("user-agent") || "";
+        const colo = c.req.raw.cf?.colo ?? "UNKNOWN";
+        
+        sentry.setTag("colo", colo);
+        sentry.setUser({ user_agent: userAgent, colo });
+
+        c.set("sentry", sentry);
+
+        await next();
+
+        if (c.error) {
+            sentry.captureException(c.error);
+        }
+    }
 }

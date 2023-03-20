@@ -1,10 +1,12 @@
 import { Hono } from "hono";
 import { nanoid } from "nanoid";
 import { Path } from "@lifaon/path";
-import { cache, auth, idLenth, type Options } from "./utils";
+import { cache, auth, sentry, idLenth, type Options } from "./utils";
 
 const app = new Hono<Options>();
 const cacheControl = "public, max-age=31536000"; // 1 year
+
+app.use("*", sentry());
 
 app.get("/", (c) => {
     return c.redirect("https://www.serenmodz.rocks", 301);
@@ -51,7 +53,7 @@ app.post("/upload", auth(), async (c) => {
         },
         customMetadata: {
             "Uploaded-By": c.get("user"),
-            Domain: url.hostname,
+            "Upload-Url": url.toString()
         },
     });
 
@@ -71,6 +73,7 @@ app.delete("/:key", auth(), async (c) => {
 });
 
 app.onError((error, c) => {
+    // c.get("sentry").captureException(error);
     return c.json({ success: false, error: error.toString() }, 500);
 });
 

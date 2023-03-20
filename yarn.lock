@@ -438,6 +438,34 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@sentry/core@npm:7.28.1":
+  version: 7.28.1
+  resolution: "@sentry/core@npm:7.28.1"
+  dependencies:
+    "@sentry/types": 7.28.1
+    "@sentry/utils": 7.28.1
+    tslib: ^1.9.3
+  checksum: 8c9e89f8a4efe84a925b5e626828dd90a714b7c017503b04d7bf754fd7e402f0ed6449250d3c03a40493b6fc2323f804f172c6b792fe2003531afdc578f1587a
+  languageName: node
+  linkType: hard
+
+"@sentry/types@npm:7.28.1":
+  version: 7.28.1
+  resolution: "@sentry/types@npm:7.28.1"
+  checksum: 57dcd5737e29990b15c1d723c47b125d325ead0766e2729c3bd0f499f6e034a9ff81b9474546ea6ecd2216b4956dbdcf342ecc13ef5a202468fd732ffb687cbf
+  languageName: node
+  linkType: hard
+
+"@sentry/utils@npm:7.28.1":
+  version: 7.28.1
+  resolution: "@sentry/utils@npm:7.28.1"
+  dependencies:
+    "@sentry/types": 7.28.1
+    tslib: ^1.9.3
+  checksum: 83a6b66b879a827f5656db02cdd23362f3158746a8da42c1683d8d5d0e5ff8ba8e74058ff8d3dea8924a9f307b74c3e021e26167b9296707f7afe08971c7f4ae
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
@@ -1903,6 +1931,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"toucan-js@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "toucan-js@npm:3.1.0"
+  dependencies:
+    "@sentry/core": 7.28.1
+    "@sentry/types": 7.28.1
+    "@sentry/utils": 7.28.1
+  checksum: 34128ccf6febdb56250bd6ab4bcda42e5feec8a2a5f02932c977b6fcaaff67ce19a4e8d3137fcffd1e88e9d1d9ea5ae24904fc5bd1bbe10ae8018a4f5e5b619e
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^1.9.3":
+  version: 1.14.1
+  resolution: "tslib@npm:1.14.1"
+  checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
+  languageName: node
+  linkType: hard
+
 "typescript@npm:^4.9.5":
   version: 4.9.5
   resolution: "typescript@npm:4.9.5"
@@ -2001,6 +2047,7 @@ __metadata:
     "@lifaon/path": ^2.1.0
     hono: ^3.1.1
     nanoid: ^4.0.1
+    toucan-js: ^3.1.0
     typescript: ^4.9.5
     wrangler: ^2.12.3
   languageName: unknown
