@@ -1001,10 +1001,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hono@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "hono@npm:3.0.3"
-  checksum: d8f0226c657cf492cf2320c612b299e43417dc7f84989bb832d33642e2b21ea0097cd80f0728c3f3995eddac8bc7fd591a19417d56930bc388116658c02567e7
+"hono@npm:^3.1.1":
+  version: 3.1.1
+  resolution: "hono@npm:3.1.1"
+  checksum: fae98a6b9107e95e079771de63c6a9c4902404279e87f6a1e5f978ca7644f149a72cc4997049458e734e411a5caf6c1bb04e25d19b6d7e932f8dc2fa3cb5b546
   languageName: node
   linkType: hard
 
@@ -1991,7 +1991,7 @@ __metadata:
   resolution: "worker@workspace:."
   dependencies:
     "@cloudflare/workers-types": ^4.20230307.0
-    hono: ^3.0.3
+    hono: ^3.1.1
     nanoid: ^4.0.1
     typescript: ^4.9.5
     wrangler: ^2.12.1

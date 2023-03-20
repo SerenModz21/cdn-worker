@@ -7,7 +7,7 @@
         "deploy": "wrangler publish"
     },
     "dependencies": {
-        "hono": "^3.0.3",
+        "hono": "^3.1.1",
         "nanoid": "^4.0.1"
     },
     "devDependencies": {
