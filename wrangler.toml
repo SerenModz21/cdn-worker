@@ -9,7 +9,8 @@ workers_dev = false
 routes = [
     "cdn.serenmodz.rocks/*",
     "cdn.ghosty.link/*",
-    "cdn.invaild.me/*"
+    "cdn.invaild.me/*",
+    "cdn.eljefeman.cc/*"
 ]
 
 kv_namespaces = [
