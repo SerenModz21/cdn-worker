@@ -4,7 +4,7 @@
     "private": true,
     "scripts": {
         "start": "wrangler dev",
-        "deploy": "wrangler publish"
+        "deploy": "wrangler deploy"
     },
     "dependencies": {
         "@lifaon/path": "^2.1.0",
