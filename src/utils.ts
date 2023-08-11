@@ -85,12 +85,6 @@ export function sentry(): Middleware {
             context: hasExecutionContext ? c.executionCtx : undefined,
         });
 
-        const userAgent = c.req.header("user-agent") || "";
-        const colo = c.req.raw.cf?.colo ?? "UNKNOWN";
-        
-        sentry.setTag("colo", colo);
-        sentry.setUser({ user_agent: userAgent, colo });
-
         c.set("sentry", sentry);
 
         await next();
