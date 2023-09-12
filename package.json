@@ -9,7 +9,7 @@
     "dependencies": {
         "@lifaon/path": "^2.1.0",
         "hono": "^3.4.1",
-        "nanoid": "^4.0.2",
+        "nanoid": "^5.0.0",
         "toucan-js": "^3.2.1"
     },
     "devDependencies": {
