@@ -8,14 +8,14 @@
     },
     "dependencies": {
         "@lifaon/path": "^2.1.0",
-        "hono": "^3.4.1",
-        "nanoid": "^4.0.2",
-        "toucan-js": "^3.2.1"
+        "hono": "^3.10.0",
+        "nanoid": "^5.0.3",
+        "toucan-js": "^3.3.1"
     },
     "devDependencies": {
-        "@cloudflare/workers-types": "^4.20230807.0",
-        "typescript": "^5.1.6",
-        "wrangler": "^3.5.0"
+        "@cloudflare/workers-types": "^4.20231025.0",
+        "typescript": "^5.2.2",
+        "wrangler": "^3.15.0"
     },
-    "packageManager": "yarn@3.6.3"
+    "packageManager": "yarn@4.0.2"
 }
