@@ -13,14 +13,11 @@ A simple CDN made using Cloudflare Workers, Cloudflare R2, and Hono.
 
 The easiest method is to click the Deploy with Workers button above and going through the installation steps provided by Cloudflare.
 
-There will not be a manual installation guide as of now but one may be added in the future. If you need any help or have any questions, free feel to create an issue and I will try my best to help you out.
+There will not be a manual installation guide as of now but one may be added in the future. However, if you need any help or have any questions, free feel to create an issue and I will try my best to help you out.
 
-As for the KV namespace, keys should be users' access tokens and some sort of user identification for the value. For example: the users name.
+As for the KV namespace, the key should be the user's access token and some sort of user identification for the value. For example: the name of the user.
 
-
-## Example
-
-ShareX example:
+### ShareX Config Example
 
 ```json
 {
@@ -41,6 +38,6 @@ ShareX example:
 ```
 
 If you wish to use the example above:
-1. Set the RequestURL and Access-Token to the domain you are using, and the Access-Token to the one you created.
+1. Set `RequestURL` to be the domain you are using, and `Access-Token` to the one you created in your KV namespace.
 2. Go to ShareX, Destinations, Custom uploader settings and then click Import. You can import from clipboard, file, or URL.
 3. Follow the prompts that it gives you and you should be done. 
