@@ -36,7 +36,7 @@ app.post("/upload", auth(), async (c) => {
     if (!image) return c.notFound();
 
     if (!(image instanceof File)) {
-        return c.json({ success: false, error: "Invalid image" }, 400);
+        return c.json({ success: false, error: "Invalid media" }, 400);
     }
 
     const arrayBuffer = await image.arrayBuffer();
@@ -78,7 +78,7 @@ app.onError((error, c) => {
 });
 
 app.notFound((c) => {
-    return c.json({ success: false, error: "Page Not Found" }, 404);
+    return c.json({ success: false, error: "Page not Found" }, 404);
 });
 
 export default app;

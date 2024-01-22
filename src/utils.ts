@@ -38,7 +38,7 @@ export function auth(): Middleware {
 export function cache(): Middleware {
     return async (c, next) => {
         const key = c.req.url;
-        const cache = await caches.open("cdn:images");
+        const cache = await caches.open("cdn:media");
         const response = await cache.match(key);
 
         if (response) {
