@@ -10,13 +10,13 @@ const app = new Hono<Options>();
 const cacheControl = "public, max-age=31536000, s-maxage=7200";
 
 app.get("/", (c) => {
-    return c.redirect("https://www.serenmodz.rocks", 301);
+    return c.redirect(c.env.REDIRECT_URL || "https://www.serenmodz.rocks", 301);
 });
 
 app.get("/:key", cache(), async (c) => {
     const key = c.req.param("key");
 
-    const object = await c.env.MY_BUCKET.get(key);
+    const object = await c.env.CDN_BUCKET.get(key);
     if (!object) return c.notFound();
 
     const data = await object.arrayBuffer();
@@ -47,7 +47,7 @@ app.post("/upload", auth(), async (c) => {
     const url = new URL(c.req.url);
     url.pathname = "/" + fileWithExt;
 
-    await c.env.MY_BUCKET.put(fileWithExt, arrayBuffer, {
+    await c.env.CDN_BUCKET.put(fileWithExt, arrayBuffer, {
         httpMetadata: {
             contentType: image.type,
             cacheControl: cacheControl,
@@ -68,7 +68,7 @@ app.post("/upload", auth(), async (c) => {
 app.delete("/:key", auth(), async (c) => {
     const key = c.req.param("key");
 
-    await c.env.MY_BUCKET.delete(key);
+    await c.env.CDN_BUCKET.delete(key);
 
     return c.json({ success: true, name: key });
 });

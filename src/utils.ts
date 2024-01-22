@@ -2,8 +2,9 @@ import type { MiddlewareHandler } from "hono";
 
 export type Options = {
     Bindings: {
-        MY_BUCKET: R2Bucket;
+        CDN_BUCKET: R2Bucket;
         CDN_USERS: KVNamespace;
+        REDIRECT_URL?: string;
     };
     Variables: {
         user: string;
