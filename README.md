@@ -17,6 +17,15 @@ There will not be a manual installation guide as of now but one may be added in 
 
 As for the KV namespace, the key should be the user's access token and some sort of user identification for the value. For example: the name of the user.
 
+### HTTP Routes
+
+Route          | Description 
+---------------|-------------
+`GET /`        | Redirects to my website by default. However, you can change it inside [wrangler.toml](/wrangler.toml#L26).
+`GET /:key`    | Displays the speciified media that has been uploaded, __publicly__.
+`POST /upload` | Uploads media to the CDN. The `Access-Token` header is required!
+`DELETE /:key` | Deletes media with the given key, from the CDN. The `Access-Token` header is required!
+
 ### ShareX Config Example
 
 ```json
