@@ -9,8 +9,7 @@
     "dependencies": {
         "@lifaon/path": "^2.1.0",
         "hono": "^3.10.0",
-        "nanoid": "^5.0.3",
-        "toucan-js": "^3.3.1"
+        "nanoid": "^5.0.3"
     },
     "devDependencies": {
         "@cloudflare/workers-types": "^4.20231025.0",

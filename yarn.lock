@@ -321,44 +321,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sentry/core@npm:7.76.0":
-  version: 7.76.0
-  resolution: "@sentry/core@npm:7.76.0"
-  dependencies:
-    "@sentry/types": "npm:7.76.0"
-    "@sentry/utils": "npm:7.76.0"
-  checksum: f6b524036a0bfe875868882d31a822ae71e598a33da1c6bb6ebf62da0520ac2b6dca5e28c70e8fb7570751ae1ebd590fc3c5b5fcc49f857753dcb739bfa7f06e
-  languageName: node
-  linkType: hard
-
-"@sentry/integrations@npm:7.76.0":
-  version: 7.76.0
-  resolution: "@sentry/integrations@npm:7.76.0"
-  dependencies:
-    "@sentry/core": "npm:7.76.0"
-    "@sentry/types": "npm:7.76.0"
-    "@sentry/utils": "npm:7.76.0"
-    localforage: "npm:^1.8.1"
-  checksum: 8f307c81fd0eec8ee250061a311bc0b5d7f0839a069b6939d0576aee74f9d87cd332e6376d41b75dc4c789aaeedba11087f28e7950f1769884bbf05a3898a3d0
-  languageName: node
-  linkType: hard
-
-"@sentry/types@npm:7.76.0":
-  version: 7.76.0
-  resolution: "@sentry/types@npm:7.76.0"
-  checksum: 67a4cde848be8be534b42608f930da91fcb3e6e9f38843d9fc670d5bd531f7d13f826fb24f0ef6f88f1e3e603e8377ea1412b2fd8097ba641746ad4243b90936
-  languageName: node
-  linkType: hard
-
-"@sentry/utils@npm:7.76.0":
-  version: 7.76.0
-  resolution: "@sentry/utils@npm:7.76.0"
-  dependencies:
-    "@sentry/types": "npm:7.76.0"
-  checksum: 141e40b3ed4da50b2b6ceb11d58e557db34431d0ad8837af21636de5692275e1fddb0b920bb20c9ac2ead67c28a446fc76f451eefd10304a4aea85f9f2b32242
-  languageName: node
-  linkType: hard
-
 "@types/node-forge@npm:^1.3.0":
   version: 1.3.9
   resolution: "@types/node-forge@npm:1.3.9"
@@ -536,6 +498,19 @@ __metadata:
   checksum: 186a76662e31ab16fe46fe0785ed2a511969d0c5198e2d7baec6b44f71c9b3bf8c05e7627036dc86c2d3ddc229c846559350c13f904fdd8da3590d7054715ba8
   languageName: node
   linkType: hard
+
+"cdn@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "cdn@workspace:."
+  dependencies:
+    "@cloudflare/workers-types": "npm:^4.20231025.0"
+    "@lifaon/path": "npm:^2.1.0"
+    hono: "npm:^3.10.0"
+    nanoid: "npm:^5.0.3"
+    typescript: "npm:^5.2.2"
+    wrangler: "npm:^3.15.0"
+  languageName: unknown
+  linkType: soft
 
 "chokidar@npm:^3.5.3":
   version: 3.5.3
@@ -919,13 +894,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"immediate@npm:~3.0.5":
-  version: 3.0.6
-  resolution: "immediate@npm:3.0.6"
-  checksum: f9b3486477555997657f70318cc8d3416159f208bec4cca3ff3442fd266bc23f50f0c9bd8547e1371a6b5e82b821ec9a7044a4f7b944798b25aa3cc6d5e63e62
-  languageName: node
-  linkType: hard
-
 "imurmurhash@npm:^0.1.4":
   version: 0.1.4
   resolution: "imurmurhash@npm:0.1.4"
@@ -1017,24 +985,6 @@ __metadata:
     "@pkgjs/parseargs":
       optional: true
   checksum: 6e6490d676af8c94a7b5b29b8fd5629f21346911ebe2e32931c2a54210134408171c24cee1a109df2ec19894ad04a429402a8438cbf5cc2794585d35428ace76
-  languageName: node
-  linkType: hard
-
-"lie@npm:3.1.1":
-  version: 3.1.1
-  resolution: "lie@npm:3.1.1"
-  dependencies:
-    immediate: "npm:~3.0.5"
-  checksum: c2c7d9dcc3a9aae641f41cde4e2e2cd571e4426b1f5915862781d77776672dcbca43461e16f4d382c9a300825c15e1a4923f1def3a5568d97577e077a3cecb44
-  languageName: node
-  linkType: hard
-
-"localforage@npm:^1.8.1":
-  version: 1.10.0
-  resolution: "localforage@npm:1.10.0"
-  dependencies:
-    lie: "npm:3.1.1"
-  checksum: d5c44be3a09169b013a3ebe252e678aaeb6938ffe72e9e12c199fd4307c1ec9d1a057ac2dfdfbb1379dfeec467a34ad0fc3ecd27489a2c43a154fb72b2822542
   languageName: node
   linkType: hard
 
@@ -1601,18 +1551,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"toucan-js@npm:^3.3.1":
-  version: 3.3.1
-  resolution: "toucan-js@npm:3.3.1"
-  dependencies:
-    "@sentry/core": "npm:7.76.0"
-    "@sentry/integrations": "npm:7.76.0"
-    "@sentry/types": "npm:7.76.0"
-    "@sentry/utils": "npm:7.76.0"
-  checksum: 6985980551f68170bca01e932f32b06ec14698bcd661188084cfa741a98a789ac3f5195ec2da3b535b8a254fadc2c8a018f3a334b6788884178a624e337a5179
-  languageName: node
-  linkType: hard
-
 "tslib@npm:^2.2.0":
   version: 2.6.2
   resolution: "tslib@npm:2.6.2"
@@ -1695,20 +1633,6 @@ __metadata:
   checksum: f17e84c042592c21e23c8195108cff18c64050b9efb8459589116999ea9da6dd1509e6a1bac3aeebefd137be00fabbb61b5c2bc0aa0f8526f32b58ee2f545651
   languageName: node
   linkType: hard
-
-"worker@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "worker@workspace:."
-  dependencies:
-    "@cloudflare/workers-types": "npm:^4.20231025.0"
-    "@lifaon/path": "npm:^2.1.0"
-    hono: "npm:^3.10.0"
-    nanoid: "npm:^5.0.3"
-    toucan-js: "npm:^3.3.1"
-    typescript: "npm:^5.2.2"
-    wrangler: "npm:^3.15.0"
-  languageName: unknown
-  linkType: soft
 
 "workerd@npm:1.20231218.0":
   version: 1.20231218.0
