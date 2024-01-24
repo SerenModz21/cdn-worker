@@ -170,3 +170,8 @@ dist
 
 .dev.vars
 .wrangler/
+
+# dev scriptss
+
+delete-file.bat
+delete-file.sh
