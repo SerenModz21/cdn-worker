@@ -1,13 +1,11 @@
 import { Hono } from "hono";
 import { nanoid } from "nanoid";
 import { Path } from "@lifaon/path";
-import { cache, auth, idLenth, type Options } from "./utils";
+
+import { cacheControl, idLenth, type Options } from "./utils";
+import { cache, auth } from "./middleware";
 
 const app = new Hono<Options>();
-
-// cache on the browser for a year and cache on cloudflare for 2 hours
-// https://developers.cloudflare.com/cache/about/cache-control#cache-control-directives
-const cacheControl = "public, max-age=31536000, s-maxage=7200";
 
 app.get("/", (c) => {
     return c.redirect(c.env.REDIRECT_URL || "https://www.serenmodz.rocks", 301);
