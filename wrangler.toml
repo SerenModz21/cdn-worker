@@ -10,7 +10,7 @@ routes = [
     "cdn.serenmodz.rocks/*",
     "cdn.ghosty.link/*",
     "cdn.invaild.me/*",
-    "cdn.eljefeman.cc/*"
+    "cdn.demonyuto.link/*"
 ]
 
 kv_namespaces = [
