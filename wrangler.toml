@@ -9,7 +9,6 @@ workers_dev = false
 routes = [
     "cdn.serenmodz.rocks/*",
     "cdn.ghosty.link/*",
-    "cdn.invaild.me/*",
     "cdn.demonyuto.link/*"
 ]
 
