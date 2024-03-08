@@ -1,0 +1,25 @@
+# https://github.com/cloudflare/wrangler-action?tab=readme-ov-file#usage
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+env:
+  # conditions cannot be done with secrets directly
+  CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+
+jobs:
+  deploy:
+    # only run if the CLOUDFLARE_API_TOKEN secret exists
+    if: ${{ env.CLOUDFLARE_API_TOKEN != "" }}
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v4
+      - name: Deploy Worker
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ env.CLOUDFLARE_API_TOKEN }}
