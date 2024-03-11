@@ -8,7 +8,7 @@
     },
     "dependencies": {
         "@lifaon/path": "^2.1.0",
-        "hono": "^3.12.6",
+        "hono": "^4.0.0",
         "nanoid": "^5.0.4"
     },
     "devDependencies": {
