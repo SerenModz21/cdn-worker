@@ -56,10 +56,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:^4.20240821.1":
-  version: 4.20240821.1
-  resolution: "@cloudflare/workers-types@npm:4.20240821.1"
-  checksum: 10/981e86ba1b0899f5e1f58087f39ec3720202df9513263704efc9558038c590d67ae9b75b489250c6687ff2dde28b6652cf64d6a6442c6dfef54be3d4d7a70442
+"@cloudflare/workers-types@npm:^4.20240903.0":
+  version: 4.20240903.0
+  resolution: "@cloudflare/workers-types@npm:4.20240903.0"
+  checksum: 10/d6f3ab8e3b36094c7392951793fc429a7853e0b3c8771800d61b7147df1db1ab43c9e6a73afe43546b4874f40620634313bcda19c1acadf7d73c4baef1942c53
   languageName: node
   linkType: hard
 
@@ -510,12 +510,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cdn@workspace:."
   dependencies:
-    "@cloudflare/workers-types": "npm:^4.20240821.1"
+    "@cloudflare/workers-types": "npm:^4.20240903.0"
     "@lifaon/path": "npm:^2.1.0"
-    hono: "npm:^4.5.10"
+    hono: "npm:^4.5.11"
     nanoid: "npm:^5.0.7"
     typescript: "npm:^5.5.4"
-    wrangler: "npm:^3.73.0"
+    wrangler: "npm:^3.75.0"
   languageName: unknown
   linkType: soft
 
@@ -888,10 +888,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hono@npm:^4.5.10":
-  version: 4.5.10
-  resolution: "hono@npm:4.5.10"
-  checksum: 10/e7a1ef0d7e103fc5c1e588123d07d4380493f003dbb17dff960e8757afc6f650db6e47a0cf0ff34bce1b4fd0ee074460d4bb996bad9a4d5b9476772e1c885ba5
+"hono@npm:^4.5.11":
+  version: 4.5.11
+  resolution: "hono@npm:4.5.11"
+  checksum: 10/a0bf0e8df5bea838b5c2a6fa4c0958a342951ff61ce68a43f9c2a495ef30822db895f57a42e4a1137dc42a4dbd7e571e98e4abda7d47d951c2aa577520ccbb52
   languageName: node
   linkType: hard
 
@@ -1089,9 +1089,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:3.20240821.0":
-  version: 3.20240821.0
-  resolution: "miniflare@npm:3.20240821.0"
+"miniflare@npm:3.20240821.1":
+  version: 3.20240821.1
+  resolution: "miniflare@npm:3.20240821.1"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     acorn: "npm:^8.8.0"
@@ -1107,7 +1107,7 @@ __metadata:
     zod: "npm:^3.22.3"
   bin:
     miniflare: bootstrap.js
-  checksum: 10/2238fcadcad427b7bdf6e7e05f43983bfc3598ce4946cb880082e60ed8a1fe5a724b94e6ebc6d9ef4846ef9f14ac65f65c9d2d63396e463755b35d2967dbad98
+  checksum: 10/ed6945094d714474fb88a157597148d447440c3dd581e08395da8046c9d2958c402976a017b2172981af517c5dd74b635103682a50e971ce4e565f73b89535b0
   languageName: node
   linkType: hard
 
@@ -1791,9 +1791,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^3.73.0":
-  version: 3.73.0
-  resolution: "wrangler@npm:3.73.0"
+"wrangler@npm:^3.75.0":
+  version: 3.75.0
+  resolution: "wrangler@npm:3.75.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
     "@cloudflare/workers-shared": "npm:0.4.1"
@@ -1804,7 +1804,7 @@ __metadata:
     date-fns: "npm:^3.6.0"
     esbuild: "npm:0.17.19"
     fsevents: "npm:~2.3.2"
-    miniflare: "npm:3.20240821.0"
+    miniflare: "npm:3.20240821.1"
     nanoid: "npm:^3.3.3"
     path-to-regexp: "npm:^6.2.0"
     resolve: "npm:^1.22.8"
@@ -1825,7 +1825,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/b672fe704ea365167804b2d7e115093a93153a77a9785f36ac8917599bb316b260aa86ed9330d47cf7dcdff9d345769b1a729b358f7cd0fd91d2ef0f4311d0a0
+  checksum: 10/b12aaca168354abedb49eecc3c399f8059da3d37436d3747cbfb64b51c2b5deb12309992168d6dbc98573fbadc682481707a7a14748a9ce75311839515044c8c
   languageName: node
   linkType: hard
 
