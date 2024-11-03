@@ -517,10 +517,10 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": "npm:^4.20241022.0"
     "@lifaon/path": "npm:^2.1.0"
-    hono: "npm:^4.6.7"
-    nanoid: "npm:^5.0.7"
+    hono: "npm:^4.6.8"
+    nanoid: "npm:^5.0.8"
     typescript: "npm:^5.6.3"
-    wrangler: "npm:^3.83.0"
+    wrangler: "npm:^3.84.1"
   languageName: unknown
   linkType: soft
 
@@ -894,7 +894,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hono@npm:^4.6.7":
+"hono@npm:^4.6.8":
   version: 4.6.8
   resolution: "hono@npm:4.6.8"
   checksum: 10/d54c3e611c5509860de4e5a531e3a348707c6f6601688a4bd23a13fe4da2cbe1037472a4fd467698e3f83e2bc8723a52ae8c175ab5aedd542e54e8b3495a409f
@@ -1251,7 +1251,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^5.0.7":
+"nanoid@npm:^5.0.8":
   version: 5.0.8
   resolution: "nanoid@npm:5.0.8"
   bin:
@@ -1804,7 +1804,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^3.83.0":
+"wrangler@npm:^3.84.1":
   version: 3.84.1
   resolution: "wrangler@npm:3.84.1"
   dependencies:
