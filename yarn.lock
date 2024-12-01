@@ -341,11 +341,11 @@ __metadata:
   linkType: hard
 
 "@types/node@npm:*":
-  version: 22.8.6
-  resolution: "@types/node@npm:22.8.6"
+  version: 22.10.1
+  resolution: "@types/node@npm:22.10.1"
   dependencies:
-    undici-types: "npm:~6.19.8"
-  checksum: 10/27bb73f033eeec05b4ed52dbc521cac28fb7ac14af267119c9bae0318c97848cd790ac7f0a65924ace7ea717eae62e91bd227da4bd6c0217d0016a7a6cd0a156
+    undici-types: "npm:~6.20.0"
+  checksum: 10/c802a526da2f3fa3ccefd00a71244e7cb825329951719e79e8fec62b1dbc2855388c830489770611584665ce10be23c05ed585982038b24924e1ba2c2cce03fd
   languageName: node
   linkType: hard
 
@@ -1157,11 +1157,11 @@ __metadata:
   linkType: hard
 
 "nanoid@npm:^3.3.3":
-  version: 3.3.7
-  resolution: "nanoid@npm:3.3.7"
+  version: 3.3.8
+  resolution: "nanoid@npm:3.3.8"
   bin:
     nanoid: bin/nanoid.cjs
-  checksum: 10/ac1eb60f615b272bccb0e2b9cd933720dad30bf9708424f691b8113826bb91aca7e9d14ef5d9415a6ba15c266b37817256f58d8ce980c82b0ba3185352565679
+  checksum: 10/2d1766606cf0d6f47b6f0fdab91761bb81609b2e3d367027aff45e6ee7006f660fb7e7781f4a34799fe6734f1268eeed2e37a5fdee809ade0c2d4eb11b0f9c40
   languageName: node
   linkType: hard
 
@@ -1599,10 +1599,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.19.8":
-  version: 6.19.8
-  resolution: "undici-types@npm:6.19.8"
-  checksum: 10/cf0b48ed4fc99baf56584afa91aaffa5010c268b8842f62e02f752df209e3dea138b372a60a963b3b2576ed932f32329ce7ddb9cb5f27a6c83040d8cd74b7a70
+"undici-types@npm:~6.20.0":
+  version: 6.20.0
+  resolution: "undici-types@npm:6.20.0"
+  checksum: 10/583ac7bbf4ff69931d3985f4762cde2690bb607844c16a5e2fbb92ed312fe4fa1b365e953032d469fa28ba8b224e88a595f0b10a449332f83fa77c695e567dbe
   languageName: node
   linkType: hard
 
@@ -1770,9 +1770,9 @@ __metadata:
   linkType: hard
 
 "xxhash-wasm@npm:^1.0.1":
-  version: 1.0.2
-  resolution: "xxhash-wasm@npm:1.0.2"
-  checksum: 10/fb66e00f57c87353688ff31a8456ca71e16b1c13610d94d09f83cbd859a1985de07ccfc6aa912a045c991da0078d4122d78d409123e36557afab7ce5d3b04a98
+  version: 1.1.0
+  resolution: "xxhash-wasm@npm:1.1.0"
+  checksum: 10/cad149dabda4ec4ce7c2edd98815c4cc21eadab72f631c832af110066867850fb86b9430499707358d3e23cafe6d71d0a5c16be8f1864f213e4cd1aa74bd9556
   languageName: node
   linkType: hard
 
