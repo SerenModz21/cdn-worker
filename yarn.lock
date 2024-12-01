@@ -49,20 +49,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-shared@npm:0.8.0":
-  version: 0.8.0
-  resolution: "@cloudflare/workers-shared@npm:0.8.0"
+"@cloudflare/workers-shared@npm:0.9.0":
+  version: 0.9.0
+  resolution: "@cloudflare/workers-shared@npm:0.9.0"
   dependencies:
     mime: "npm:^3.0.0"
     zod: "npm:^3.22.3"
-  checksum: 10/a3ea82412023c0ee4c6e2bf88fdd831bc95578252b7dd8f7abc957d91bae3a21bdf558c575cb86e0af9074b9fc38050147c90a519a30a84c10c9968d354e8676
+  checksum: 10/152038b2bc4c0d11a1f18256a15702083be80f0b2967bde5892dbf670391d30772e9b862cdc83a26f58bdcd533ff9c9ff38962e3a41c874af0359465d3e130b1
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:^4.20241112.0":
-  version: 4.20241112.0
-  resolution: "@cloudflare/workers-types@npm:4.20241112.0"
-  checksum: 10/b0aae1dcac6c1e02faceeaffb6279e2f4ed65db8ca509d1c5f301ddcfde768157a5a7aa60716da90847743d5aa018049db8d3a2b84fe2740bac39647a6a0dcbc
+"@cloudflare/workers-types@npm:^4.20241127.0":
+  version: 4.20241127.0
+  resolution: "@cloudflare/workers-types@npm:4.20241127.0"
+  checksum: 10/d1e0297c1ec10acfa308377720c7c1e3f3c39f2a6292a845fe770d5f662df417b130f2fc956f5d75a22730467e35e765e99ab59c152688f5a3e2da73d74930b8
   languageName: node
   linkType: hard
 
@@ -489,12 +489,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cdn@workspace:."
   dependencies:
-    "@cloudflare/workers-types": "npm:^4.20241112.0"
+    "@cloudflare/workers-types": "npm:^4.20241127.0"
     "@lifaon/path": "npm:^2.1.0"
-    hono: "npm:^4.6.11"
-    nanoid: "npm:^5.0.8"
+    hono: "npm:^4.6.12"
+    nanoid: "npm:^5.0.9"
     typescript: "npm:^5.7.2"
-    wrangler: "npm:^3.90.0"
+    wrangler: "npm:^3.91.0"
   languageName: unknown
   linkType: soft
 
@@ -840,10 +840,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hono@npm:^4.6.11":
-  version: 4.6.11
-  resolution: "hono@npm:4.6.11"
-  checksum: 10/5a22f10c094a5f34d2c959aa70703920759dccbada91022c4dbcf4a46aa4962bb410591740e5bce2ac9f2e5824c0e993e8e972fc3e5ebfbf96781aaf6f8b8bf7
+"hono@npm:^4.6.12":
+  version: 4.6.12
+  resolution: "hono@npm:4.6.12"
+  checksum: 10/0d873614926c75591a54775d893f1b98e2d5049fa0c108690c745cb53091893471d02d57ec183af2d66e2285d0073b67e3c14cda3803ccbb12bf7eecbbb040ab
   languageName: node
   linkType: hard
 
@@ -1165,12 +1165,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^5.0.8":
-  version: 5.0.8
-  resolution: "nanoid@npm:5.0.8"
+"nanoid@npm:^5.0.9":
+  version: 5.0.9
+  resolution: "nanoid@npm:5.0.9"
   bin:
     nanoid: bin/nanoid.js
-  checksum: 10/df131a515465053ff25c8cf0450ef191e1db83b45fe125af43f50d39feddf1f161d3b2abb34cb993df35a76b427f8d6d982e16e47d67b2fbe843664af025b5e2
+  checksum: 10/8a3f9104f81095e3e4785f58caae47a05755599824b8611b9730cbf73db706b664f100e6189f8303f08764f144d499613d8e4a39e83125c53f4b4986d6576621
   languageName: node
   linkType: hard
 
@@ -1615,15 +1615,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unenv@npm:unenv-nightly@2.0.0-20241111-080453-894aa31":
-  version: 2.0.0-20241111-080453-894aa31
-  resolution: "unenv-nightly@npm:2.0.0-20241111-080453-894aa31"
+"unenv@npm:unenv-nightly@2.0.0-20241121-161142-806b5c0":
+  version: 2.0.0-20241121-161142-806b5c0
+  resolution: "unenv-nightly@npm:2.0.0-20241121-161142-806b5c0"
   dependencies:
     defu: "npm:^6.1.4"
     ohash: "npm:^1.1.4"
     pathe: "npm:^1.1.2"
     ufo: "npm:^1.5.4"
-  checksum: 10/adcd8769d503eda8611ac82d70cfa9a2875f0bbd8e597edd581ab1f9ac654ec782e043a86099d2a161f230bb3bd93251b55ce1e75f16abe00388387c2fa50d81
+  checksum: 10/2c107c85ce2e3c7969558c4fa48574d5dc157b03f1052a7a7870560185da4b996206f0e94a29927f3de4073138549be244ea6368923eb9214682a060516070b7
   languageName: node
   linkType: hard
 
@@ -1693,12 +1693,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^3.90.0":
-  version: 3.90.0
-  resolution: "wrangler@npm:3.90.0"
+"wrangler@npm:^3.91.0":
+  version: 3.91.0
+  resolution: "wrangler@npm:3.91.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
-    "@cloudflare/workers-shared": "npm:0.8.0"
+    "@cloudflare/workers-shared": "npm:0.9.0"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
     "@esbuild-plugins/node-modules-polyfill": "npm:^0.2.2"
     blake3-wasm: "npm:^2.1.5"
@@ -1714,7 +1714,7 @@ __metadata:
     resolve.exports: "npm:^2.0.2"
     selfsigned: "npm:^2.0.1"
     source-map: "npm:^0.6.1"
-    unenv: "npm:unenv-nightly@2.0.0-20241111-080453-894aa31"
+    unenv: "npm:unenv-nightly@2.0.0-20241121-161142-806b5c0"
     workerd: "npm:1.20241106.1"
     xxhash-wasm: "npm:^1.0.1"
   peerDependencies:
@@ -1728,7 +1728,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/229e9139e1d038fd1d296ccf46fa5a9a0c5232919e7e0a802ed4952ea5515d7875a36a5b013e7935db8eb52481094659b8a105c3600976797db1dfa1f654e7e1
+  checksum: 10/1e54ee49d46781beb370a917d0f584ee88d17cce9e436ef9927efe37228940a4ac61de22c26ed120b8a943e4f8c5e8b8042e6156084000cc1794f75ff2a0ee13
   languageName: node
   linkType: hard
 
