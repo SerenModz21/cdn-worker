@@ -49,13 +49,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-shared@npm:0.10.0":
-  version: 0.10.0
-  resolution: "@cloudflare/workers-shared@npm:0.10.0"
+"@cloudflare/workers-shared@npm:0.11.0":
+  version: 0.11.0
+  resolution: "@cloudflare/workers-shared@npm:0.11.0"
   dependencies:
     mime: "npm:^3.0.0"
     zod: "npm:^3.22.3"
-  checksum: 10/26be9b5a0d7b727de1053dbcf255e336f472e3f617fc76a35947f0dbfc6a1fb331df0a45450dea031b7c56e3394cf724e31a5534b0c42ea21cee78238d2715dd
+  checksum: 10/6665d189fd41568e838a4d2a1474dda6c7fe3c200b0dbf2923cc72edff38b775e90970d4322e72bb837d52ba744ba179590228ae5f43c0a1b1ff9e7b09a2e1c8
   languageName: node
   linkType: hard
 
@@ -491,10 +491,10 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": "npm:^4.20241205.0"
     "@lifaon/path": "npm:^2.1.0"
-    hono: "npm:^4.6.13"
+    hono: "npm:^4.6.14"
     nanoid: "npm:^5.0.9"
     typescript: "npm:^5.7.2"
-    wrangler: "npm:^3.93.0"
+    wrangler: "npm:^3.95.0"
   languageName: unknown
   linkType: soft
 
@@ -840,10 +840,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hono@npm:^4.6.13":
-  version: 4.6.13
-  resolution: "hono@npm:4.6.13"
-  checksum: 10/925b79549e44c66ad7c54de3d80d57383d537db2fd021bb0f521169c9ff6b029f21d8278d1a5fb19e465af78d7e2d2b63c07f6bdd758324e087dd8119c813a67
+"hono@npm:^4.6.14":
+  version: 4.6.14
+  resolution: "hono@npm:4.6.14"
+  checksum: 10/0b4518096eda4ce94ed3ec532c8b955d5ea088725ebc5d8b9ba27f3620553d84f3054340ab4493d3b9c6957c4f703fa11c106f2cf297ca6b753f2294be1fb94a
   languageName: node
   linkType: hard
 
@@ -1686,12 +1686,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^3.93.0":
-  version: 3.93.0
-  resolution: "wrangler@npm:3.93.0"
+"wrangler@npm:^3.95.0":
+  version: 3.95.0
+  resolution: "wrangler@npm:3.95.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
-    "@cloudflare/workers-shared": "npm:0.10.0"
+    "@cloudflare/workers-shared": "npm:0.11.0"
     "@esbuild-plugins/node-globals-polyfill": "npm:^0.2.3"
     "@esbuild-plugins/node-modules-polyfill": "npm:^0.2.2"
     blake3-wasm: "npm:^2.1.5"
@@ -1720,7 +1720,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/54cd1ae35cf5982017e7197d103620ed060f8da48b721c5e331ef02416d7fe2f1d8315361c4cb1cbe54245fc280cd3a65d5c50733007efb500b916debd05e9b2
+  checksum: 10/fc5404e649dc223104ef28281e48d85161cb6732833c050d8ae2546bcd267d83f228d4dbf102d4885f334e77d51691d8f6e29365ff07fc5d77574f35ef7a1d8c
   languageName: node
   linkType: hard
 
