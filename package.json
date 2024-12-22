@@ -12,9 +12,9 @@
         "nanoid": "^5.0.9"
     },
     "devDependencies": {
-        "@cloudflare/workers-types": "^4.20241205.0",
+        "@cloudflare/workers-types": "^4.20241218.0",
         "typescript": "^5.7.2",
-        "wrangler": "^3.95.0"
+        "wrangler": "^3.99.0"
     },
     "packageManager": "yarn@4.5.3"
 }
