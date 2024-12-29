@@ -49,10 +49,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:^4.20241218.0":
-  version: 4.20241218.0
-  resolution: "@cloudflare/workers-types@npm:4.20241218.0"
-  checksum: 10/d57e5efe22df4c1602acb4b64fea1ba5ea4e7ffe00147dbba0d06b9795bb4c896ba6c020b5d4c9956d72ce1acc17cae7d3e1f4330a2a56482a22367c7a0e81b5
+"@cloudflare/workers-types@npm:^4.20241224.0":
+  version: 4.20241224.0
+  resolution: "@cloudflare/workers-types@npm:4.20241224.0"
+  checksum: 10/b380b8bfdabba5541766f3ce3d05260d833299ea742f5ad42d319a6a8ed9b5b316a64db545e64d001daa3222a2fb80b18d1d18345411044d0efc6b469bb5c9a3
   languageName: node
   linkType: hard
 
@@ -479,9 +479,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cdn@workspace:."
   dependencies:
-    "@cloudflare/workers-types": "npm:^4.20241218.0"
+    "@cloudflare/workers-types": "npm:^4.20241224.0"
     "@lifaon/path": "npm:^2.1.0"
-    hono: "npm:^4.6.14"
+    hono: "npm:^4.6.15"
     nanoid: "npm:^5.0.9"
     typescript: "npm:^5.7.2"
     wrangler: "npm:^3.99.0"
@@ -830,10 +830,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hono@npm:^4.6.14":
-  version: 4.6.14
-  resolution: "hono@npm:4.6.14"
-  checksum: 10/0b4518096eda4ce94ed3ec532c8b955d5ea088725ebc5d8b9ba27f3620553d84f3054340ab4493d3b9c6957c4f703fa11c106f2cf297ca6b753f2294be1fb94a
+"hono@npm:^4.6.15":
+  version: 4.6.15
+  resolution: "hono@npm:4.6.15"
+  checksum: 10/56b46412b01841e82cfdaf4cc43a1400ca20eff88cac75cdcb781b6a545cabf69c07d0cf996902206dfc542c182b58d2413a12bb7eba1020bcfd4b727678f3be
   languageName: node
   linkType: hard
 
