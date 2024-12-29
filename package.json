@@ -8,11 +8,11 @@
     },
     "dependencies": {
         "@lifaon/path": "^2.1.0",
-        "hono": "^4.6.14",
+        "hono": "^4.6.15",
         "nanoid": "^5.0.9"
     },
     "devDependencies": {
-        "@cloudflare/workers-types": "^4.20241218.0",
+        "@cloudflare/workers-types": "^4.20241224.0",
         "typescript": "^5.7.2",
         "wrangler": "^3.99.0"
     },
