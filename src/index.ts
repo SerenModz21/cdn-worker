@@ -8,7 +8,7 @@ import { cache, auth } from "./middleware";
 const app = new Hono<Options>();
 
 app.get("/", (c) => {
-    return c.redirect(c.env.REDIRECT_URL || "https://www.serenmodz.rocks", 301);
+    return c.redirect(c.env.REDIRECT_URL || "https://seren.dev", 301);
 });
 
 app.get("/:key", cache(), async (c) => {
