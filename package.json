@@ -7,7 +7,6 @@
         "deploy": "wrangler deploy"
     },
     "dependencies": {
-        "@lifaon/path": "^2.1.0",
         "hono": "^4.7.2",
         "nanoid": "^5.1.2"
     },
