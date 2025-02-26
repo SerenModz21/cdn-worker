@@ -23,25 +23,19 @@ export function cache(): Middleware {
         const cache = await caches.open("cdn:media");
         const response = await cache.match(key);
 
-        if (response) {
-            const ifNoneMatch =
-                c.req.header("If-None-Match") || c.req.header("if-none-match");
-            const etag =
-                response.headers.get("ETag") || response.headers.get("etag");
-
-            if (ifNoneMatch === etag) {
-                return new Response(null, {
-                    status: 304,
-                    statusText: "Not Modified",
-                    headers: response.headers
-                });
-            }
-
-            return response;
+        if (response && c.req.header("If-None-Match") === response.headers.get("ETag")) {
+            return new Response(null, {
+                status: 304,
+                statusText: "Not Modified",
+                headers: response.headers
+            });
         }
 
         await next();
 
-        c.executionCtx.waitUntil(cache.put(key, c.res.clone()));
+        // only cache successful responses
+        if (c.res.ok) {
+            c.executionCtx.waitUntil(cache.put(key, c.res.clone()));
+        }
     };
 }
