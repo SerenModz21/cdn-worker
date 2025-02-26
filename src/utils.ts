@@ -4,10 +4,16 @@ import type { MiddlewareHandler } from "hono";
 // https://developers.cloudflare.com/cache/about/cache-control#cache-control-directives
 export const cacheControl = "public, max-age=31536000, s-maxage=7200";
 
-export function idLenth(query: string | undefined, def: number) {
+export function idLength(query: string | undefined, def: number) {
     const id = query ? parseInt(query) : null;
     if (!id || isNaN(id)) return def;
     return id;
+}
+
+export function getFileExt(filename: string) {
+    const index = filename.lastIndexOf(".");
+    if (index <= 0) return "";
+    return filename.slice(index);
 }
 
 export type Options = {
