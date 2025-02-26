@@ -3,7 +3,7 @@ import type { Middleware } from "./utils";
 export function auth(): Middleware {
     return async (c, next) => {
         const missingAccess = () => {
-            c.json({ success: false, error: "Missing Access" }, 401);
+            return c.json({ success: false, error: "Missing Access" }, 401);
         };
 
         const header = c.req.header("Access-Token");
