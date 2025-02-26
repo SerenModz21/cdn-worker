@@ -1,8 +1,7 @@
 import { Hono } from "hono";
 import { nanoid } from "nanoid";
-import { Path } from "@lifaon/path";
 
-import { cacheControl, idLenth, type Options } from "./utils";
+import { cacheControl, getFileExt, idLength, type Options } from "./utils";
 import { cache, auth } from "./middleware";
 
 const app = new Hono<Options>();
@@ -15,7 +14,9 @@ app.get("/:key", cache(), async (c) => {
     const key = c.req.param("key");
 
     const object = await c.env.CDN_BUCKET.get(key);
-    if (!object) return c.notFound();
+    if (!object) {
+        return c.json({ success:false, error: "Media not found" });
+    }
 
     const data = await object.arrayBuffer();
     const contentType = object.httpMetadata?.contentType || "";
@@ -23,15 +24,18 @@ app.get("/:key", cache(), async (c) => {
     return c.body(data, 200, {
         "Cache-Control": cacheControl,
         "Content-Type": contentType,
+        "Content-Disposition": `inline; filename="${key}"`,
         ETag: object.httpEtag,
     });
 });
 
 app.post("/upload", auth(), async (c) => {
-    const filename = nanoid(idLenth(c.req.header("Name-Length"), 8));
+    const filename = nanoid(idLength(c.req.header("Name-Length"), 8));
     const { image } = await c.req.parseBody();
 
-    if (!image) return c.notFound();
+    if (!image) {
+        return c.json({ success: false, error: "Missing media" }, 400);
+    }
 
     if (!(image instanceof File)) {
         return c.json({ success: false, error: "Invalid media" }, 400);
@@ -39,11 +43,10 @@ app.post("/upload", auth(), async (c) => {
 
     const arrayBuffer = await image.arrayBuffer();
 
-    const { ext } = new Path(image.name).stemAndExtOrThrow();
-    const fileWithExt = filename + ext;
+    const fileWithExt = `${filename}${getFileExt(image.name)}`;
 
     const url = new URL(c.req.url);
-    url.pathname = "/" + fileWithExt;
+    url.pathname = `/${fileWithExt}`;
 
     await c.env.CDN_BUCKET.put(fileWithExt, arrayBuffer, {
         httpMetadata: {
@@ -58,7 +61,7 @@ app.post("/upload", auth(), async (c) => {
 
     return c.json({
         success: true,
-        name: image.name,
+        name: filename,
         url: url.toString(),
     });
 });
@@ -66,7 +69,15 @@ app.post("/upload", auth(), async (c) => {
 app.delete("/:key", auth(), async (c) => {
     const key = c.req.param("key");
 
+    const object = await c.env.CDN_BUCKET.get(key);
+    if (!object) {
+        return c.json({ success:false, error: "Media not found" });
+    }
+
     await c.env.CDN_BUCKET.delete(key);
+
+    const cache = await caches.open("cdn:media");
+    await cache.delete(c.req.url);
 
     return c.json({ success: true, name: key });
 });
