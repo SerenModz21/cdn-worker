@@ -62,10 +62,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:^4.20250321.0":
-  version: 4.20250321.0
-  resolution: "@cloudflare/workers-types@npm:4.20250321.0"
-  checksum: 10/537efbffcbfe589efcd5613f3feb3ad2710010022f44eec7e9793cd853abf48dc48a03d748c284b85d8e2a1f8d9e00e8c7a03fc72c3dee00458f4d4224569d6d
+"@cloudflare/workers-types@npm:^4.20250327.0":
+  version: 4.20250327.0
+  resolution: "@cloudflare/workers-types@npm:4.20250327.0"
+  checksum: 10/75a47dd2315d53c8a3c077e8f816ac1041835e5521f555ce20a76aa707afb7b2c03a88a1605085543bcc004e3c58249d18caafffbd419eb9284834f43fceaf7e
   languageName: node
   linkType: hard
 
@@ -636,11 +636,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cdn@workspace:."
   dependencies:
-    "@cloudflare/workers-types": "npm:^4.20250321.0"
+    "@cloudflare/workers-types": "npm:^4.20250327.0"
     hono: "npm:^4.7.5"
     nanoid: "npm:^5.1.5"
     typescript: "npm:^5.8.2"
-    wrangler: "npm:^3.114.2"
+    wrangler: "npm:^3.114.3"
   languageName: unknown
   linkType: soft
 
@@ -1794,9 +1794,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^3.114.2":
-  version: 3.114.2
-  resolution: "wrangler@npm:3.114.2"
+"wrangler@npm:^3.114.3":
+  version: 3.114.3
+  resolution: "wrangler@npm:3.114.3"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.3.4"
     "@cloudflare/unenv-preset": "npm:2.0.2"
@@ -1823,7 +1823,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/3b49ae122b3c6dfd85a03f3f3fa0e4542857b628e26c1c1bcf115c8611d0954a12b879456b1988787f2b76de287b226050f457c2a1a0cff5d5bfaba3e104da24
+  checksum: 10/c76dd6901d8dfba417268ba134123cff982f7526f4dbd585eb33b93fe185bd3a22ef8a2030e7bfddd50a36de6a08c8905b31c906598777198a29ff3e74e18122
   languageName: node
   linkType: hard
 
