@@ -42,7 +42,7 @@ I have decided to remove it because it cannot create a KV namespace or an R2 buc
 
 If you need some help, I can try my best to help but cannot guarantee anything. First, have a look through [existing issues](https://github.com/SerenModz21/cdn-worker/issues) first to make sure someone else hasn't already had the same issue. If it hasn't, then please create a [new issue](https://github.com/SerenModz21/cdn-worker/issues/new) by clicking on the highlighted text. Please explain thoroughly and include images or videos where possible. That way, you'll have a better change of getting a faster solution.
 
-### HTTP Routes
+## HTTP Routes
 
 Route          | Description 
 ---------------|-------------
