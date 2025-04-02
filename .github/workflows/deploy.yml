@@ -19,6 +19,8 @@ jobs:
         with:
           node-version: 22
           cache: yarn
+      - name: Install Dependencies
+        run: yarn --immutable
       - name: Deploy Worker
         uses: cloudflare/wrangler-action@v3
         with:
