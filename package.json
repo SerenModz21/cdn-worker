@@ -13,7 +13,7 @@
     "devDependencies": {
         "@cloudflare/workers-types": "^4.20250327.0",
         "typescript": "^5.8.2",
-        "wrangler": "^3.114.3"
+        "wrangler": "^4.6.0"
     },
     "packageManager": "yarn@4.8.1"
 }
