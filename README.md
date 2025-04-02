@@ -25,7 +25,7 @@ To follow the instructions below, you must have Node.js installed. Additionally,
 
 To add users, you must add them to the KV namespace. If you don't already know, KV stands for key/value pair. The key is the user's access token and the value is something to identify them with (eg. username).
 
-Users can be added via your Cloudflare dashboard by going to "Storage & Databases" followed by "KV" and then clicking on the namespace that was just created. As for doing it via the terminal, you would run the following: `yarn wrangler kv key put --binding=CDN_USERS "access token" "user identifier"`.
+Users can be added via your Cloudflare dashboard by going to "Storage & Databases" followed by "KV" and then clicking on the namespace that was just created. As for doing it via the terminal, you would run the following: `yarn wrangler kv key put --remote --binding=CDN_USERS "access token" "user identifier"`.
 
 > [!IMPORTANT]  
 > It's important that you create strong access tokens to prevent random people gaining access! I recommend at least 64+ characters! You can use a password manager or password generator to create them.
