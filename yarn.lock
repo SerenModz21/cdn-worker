@@ -63,9 +63,9 @@ __metadata:
   linkType: hard
 
 "@cloudflare/workers-types@npm:^4.20250427.0":
-  version: 4.20250427.0
-  resolution: "@cloudflare/workers-types@npm:4.20250427.0"
-  checksum: 10/ae4cfd3fc1d9f774e4ac103eab1cf9ded1695a165ac64fdcfa52be599785bbe7343f9a7f7dfd75fe1399602f4471bf3a92fc922d256e4d579d456a8c821c9c6e
+  version: 4.20250430.0
+  resolution: "@cloudflare/workers-types@npm:4.20250430.0"
+  checksum: 10/b80f11dc882cf543b012d6f2d4d68e81ad8112da1e3560c9a831625bd56e6ed221280a3f1c83b3ffedc2a2defe3d8acb63285bf5f6e0bd8c146b26225aa7c9b2
   languageName: node
   linkType: hard
 
@@ -79,11 +79,11 @@ __metadata:
   linkType: hard
 
 "@emnapi/runtime@npm:^1.2.0":
-  version: 1.4.0
-  resolution: "@emnapi/runtime@npm:1.4.0"
+  version: 1.4.3
+  resolution: "@emnapi/runtime@npm:1.4.3"
   dependencies:
     tslib: "npm:^2.4.0"
-  checksum: 10/38098887d0cb7189f37a020c194725f0b6900f56df146e4002f83a82a0add20db745cf85e4d49c215fd5de1e57e360d1bceb9ca27c8bb3c8445ee77c315f8732
+  checksum: 10/4f90852a1a5912982cc4e176b6420556971bcf6a85ee23e379e2455066d616219751367dcf43e6a6eaf41ea7e95ba9dc830665a52b5d979dfe074237d19578f8
   languageName: node
   linkType: hard
 
@@ -521,9 +521,9 @@ __metadata:
   linkType: hard
 
 "abbrev@npm:^3.0.0":
-  version: 3.0.0
-  resolution: "abbrev@npm:3.0.0"
-  checksum: 10/2ceee14efdeda42ef7355178c1069499f183546ff7112b3efe79c1edef09d20ad9c17939752215fb8f7fcf48d10e6a7c0aa00136dc9cf4d293d963718bb1d200
+  version: 3.0.1
+  resolution: "abbrev@npm:3.0.1"
+  checksum: 10/ebd2c149dda6f543b66ce3779ea612151bb3aa9d0824f169773ee9876f1ca5a4e0adbcccc7eed048c04da7998e1825e2aa76fcca92d9e67dea50ac2b0a58dc2e
   languageName: node
   linkType: hard
 
@@ -732,9 +732,9 @@ __metadata:
   linkType: hard
 
 "detect-libc@npm:^2.0.3":
-  version: 2.0.3
-  resolution: "detect-libc@npm:2.0.3"
-  checksum: 10/b4ea018d623e077bd395f168a9e81db77370dde36a5b01d067f2ad7989924a81d31cb547ff764acb2aa25d50bb7fdde0b0a93bec02212b0cb430621623246d39
+  version: 2.0.4
+  resolution: "detect-libc@npm:2.0.4"
+  checksum: 10/136e995f8c5ffbc515955b0175d441b967defd3d5f2268e89fa695e9c7170d8bed17993e31a34b04f0fad33d844a3a598e0fd519a8e9be3cad5f67662d96fee0
   languageName: node
   linkType: hard
 
@@ -883,9 +883,21 @@ __metadata:
   linkType: hard
 
 "exsolve@npm:^1.0.4":
-  version: 1.0.4
-  resolution: "exsolve@npm:1.0.4"
-  checksum: 10/1cef4fee4c1ec2a2d316731e7df856cd835791c0e18a2ef74a39921e4e09653ddee3be5d6a589f92d81b0e7b776d96100459780a7727715021c189aa9ceed920
+  version: 1.0.5
+  resolution: "exsolve@npm:1.0.5"
+  checksum: 10/5bcdad5685f3435e3f1f0326cfccf727418752cb5945d7c030d48c0aaff9dd5ebd8b082ab498e576f34c391aaba7b32d35632f2f708c1ca1cdfe714aa66902bc
+  languageName: node
+  linkType: hard
+
+"fdir@npm:^6.4.4":
+  version: 6.4.4
+  resolution: "fdir@npm:6.4.4"
+  peerDependencies:
+    picomatch: ^3 || ^4
+  peerDependenciesMeta:
+    picomatch:
+      optional: true
+  checksum: 10/d0000d6b790059b35f4ed19acc8847a66452e0bc68b28766c929ffd523e5ec2083811fc8a545e4a1d4945ce70e887b3a610c145c681073b506143ae3076342ed
   languageName: node
   linkType: hard
 
@@ -944,7 +956,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"glob@npm:^10.2.2, glob@npm:^10.3.10":
+"glob@npm:^10.2.2":
   version: 10.4.5
   resolution: "glob@npm:10.4.5"
   dependencies:
@@ -968,9 +980,9 @@ __metadata:
   linkType: hard
 
 "hono@npm:^4.7.7":
-  version: 4.7.7
-  resolution: "hono@npm:4.7.7"
-  checksum: 10/a0cc12e7a035132824769f392944eee5271bf2da4c3880c167faeb05c80f54a9a16b939d5dfefb931bc03b789ea0b0e024b7f3547ff68d57d20354b2a993b1ce
+  version: 4.7.8
+  resolution: "hono@npm:4.7.8"
+  checksum: 10/6a574a786f88fb5bba4a1fb1be4b6e0d31225a2f91c214f1d4afa2d491e1e4feb05a01bb4624218bc9d525a6a998f198d1ccead6abaf1537b71bd9ec80e22e4d
   languageName: node
   linkType: hard
 
@@ -1258,22 +1270,22 @@ __metadata:
   linkType: hard
 
 "node-gyp@npm:latest":
-  version: 11.1.0
-  resolution: "node-gyp@npm:11.1.0"
+  version: 11.2.0
+  resolution: "node-gyp@npm:11.2.0"
   dependencies:
     env-paths: "npm:^2.2.0"
     exponential-backoff: "npm:^3.1.1"
-    glob: "npm:^10.3.10"
     graceful-fs: "npm:^4.2.6"
     make-fetch-happen: "npm:^14.0.3"
     nopt: "npm:^8.0.0"
     proc-log: "npm:^5.0.0"
     semver: "npm:^7.3.5"
     tar: "npm:^7.4.3"
+    tinyglobby: "npm:^0.2.12"
     which: "npm:^5.0.0"
   bin:
     node-gyp: bin/node-gyp.js
-  checksum: 10/3314ebfeb99dbcdf9e8c810df1ee52294045399873d4ab1e6740608c4fbe63adaf6580c0610b23c6eda125e298536553f5bb6fb0df714016a5c721ed31095e42
+  checksum: 10/806fd8e3adc9157e17bf0d4a2c899cf6b98a0bbe9f453f630094ce791866271f6cddcaf2133e6513715d934fcba2014d287c7053d5d7934937b3a34d5a3d84ad
   languageName: node
   linkType: hard
 
@@ -1337,6 +1349,13 @@ __metadata:
   version: 2.0.3
   resolution: "pathe@npm:2.0.3"
   checksum: 10/01e9a69928f39087d96e1751ce7d6d50da8c39abf9a12e0ac2389c42c83bc76f78c45a475bd9026a02e6a6f79be63acc75667df855862fe567d99a00a540d23d
+  languageName: node
+  linkType: hard
+
+"picomatch@npm:^4.0.2":
+  version: 4.0.2
+  resolution: "picomatch@npm:4.0.2"
+  checksum: 10/ce617b8da36797d09c0baacb96ca8a44460452c89362d7cb8f70ca46b4158ba8bc3606912de7c818eb4a939f7f9015cef3c766ec8a0c6bfc725fdc078e39c717
   languageName: node
   linkType: hard
 
@@ -1610,6 +1629,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"tinyglobby@npm:^0.2.12":
+  version: 0.2.13
+  resolution: "tinyglobby@npm:0.2.13"
+  dependencies:
+    fdir: "npm:^6.4.4"
+    picomatch: "npm:^4.0.2"
+  checksum: 10/b04557ee58ad2be5f2d2cbb4b441476436c92bb45ba2e1fc464d686b793392b305ed0bcb8b877429e9b5036bdd46770c161a08384c0720b6682b7cd6ac80e403
+  languageName: node
+  linkType: hard
+
 "tslib@npm:^2.4.0":
   version: 2.8.1
   resolution: "tslib@npm:2.8.1"
@@ -1638,9 +1667,9 @@ __metadata:
   linkType: hard
 
 "ufo@npm:^1.5.4":
-  version: 1.5.4
-  resolution: "ufo@npm:1.5.4"
-  checksum: 10/a885ed421e656aea6ca64e9727b8118a9488715460b6f1a0f0427118adfe2f2830fe7c1d5bd9c5c754a332e6807516551cd663ea67ce9ed6a4e3edc739916335
+  version: 1.6.1
+  resolution: "ufo@npm:1.6.1"
+  checksum: 10/088a68133b93af183b093e5a8730a40fe7fd675d3dc0656ea7512f180af45c92300c294f14d4d46d4b2b553e3e52d3b13d4856b9885e620e7001edf85531234e
   languageName: node
   linkType: hard
 
