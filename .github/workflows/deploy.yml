@@ -9,8 +9,10 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
     name: Deploy
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
       - name: Checkout Project
         uses: actions/checkout@v4
