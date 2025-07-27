@@ -14,16 +14,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/unenv-preset@npm:2.3.3":
-  version: 2.3.3
-  resolution: "@cloudflare/unenv-preset@npm:2.3.3"
+"@cloudflare/unenv-preset@npm:2.4.1":
+  version: 2.4.1
+  resolution: "@cloudflare/unenv-preset@npm:2.4.1"
   peerDependencies:
     unenv: 2.0.0-rc.17
-    workerd: ^1.20250508.0
+    workerd: ^1.20250521.0
   peerDependenciesMeta:
     workerd:
       optional: true
-  checksum: 10/0fcea9f8baff183950061b2fb5c905a04526d1e7c8c4990c36805376280d2682d313daf747dee30a7822a46654e5bd197386377a45ffe130cfcc948d94d9489d
+  checksum: 10/8ff3cd5a19896c2c8bf0f7b4b04b9d3cccd94f60a222c97187da5f84a21ac5e7244442c6ba6d4022d04a74761245ce4082de964eb440df67ce6db1bd3ebdd59c
   languageName: node
   linkType: hard
 
@@ -62,10 +62,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:^4.20250719.0":
-  version: 4.20250719.0
-  resolution: "@cloudflare/workers-types@npm:4.20250719.0"
-  checksum: 10/441102725d15507a074496588386e9293c0739af7d242ced753f69bf1e7bab7c6b9093048f8986926ca5bfa062ca4d5e2fae3380602142310c7d3ccb8c28d82f
+"@cloudflare/workers-types@npm:^4.20250726.0":
+  version: 4.20250726.0
+  resolution: "@cloudflare/workers-types@npm:4.20250726.0"
+  checksum: 10/289cfc49b41cf7c2d106c28282c70cceccd973e4b2d5dbffb70bc98f9b8b1148625fba7b243864e6d2d62a535c86e1e14e15f5d039c9269fda699d7dd57791d2
   languageName: node
   linkType: hard
 
@@ -661,11 +661,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cdn@workspace:."
   dependencies:
-    "@cloudflare/workers-types": "npm:^4.20250719.0"
-    hono: "npm:^4.8.5"
+    "@cloudflare/workers-types": "npm:^4.20250726.0"
+    hono: "npm:^4.8.9"
     nanoid: "npm:^5.1.5"
     typescript: "npm:^5.8.3"
-    wrangler: "npm:^4.25.0"
+    wrangler: "npm:^4.26.0"
   languageName: unknown
   linkType: soft
 
@@ -994,10 +994,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hono@npm:^4.8.5":
-  version: 4.8.5
-  resolution: "hono@npm:4.8.5"
-  checksum: 10/225b12cd625bbd1fcd7d5d21d0daa840f1892c0425fc4d5b3b9c4500b359a0c167b9ae0d94598fbae480af533f8b61e4085e11865a960f9f624359aa279bd8c0
+"hono@npm:^4.8.9":
+  version: 4.8.9
+  resolution: "hono@npm:4.8.9"
+  checksum: 10/052df7ce99ef8026ffe40f777e9bea8dd0ca35c36c6ec90d5d674e1fe7e80a79143b40b68ef9255b3f3a2da0671b967dcd9b410429259c08095ff26401dff7fb
   languageName: node
   linkType: hard
 
@@ -1144,9 +1144,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"miniflare@npm:4.20250712.0":
-  version: 4.20250712.0
-  resolution: "miniflare@npm:4.20250712.0"
+"miniflare@npm:4.20250712.2":
+  version: 4.20250712.2
+  resolution: "miniflare@npm:4.20250712.2"
   dependencies:
     "@cspotcode/source-map-support": "npm:0.8.1"
     acorn: "npm:8.14.0"
@@ -1162,7 +1162,7 @@ __metadata:
     zod: "npm:3.22.3"
   bin:
     miniflare: bootstrap.js
-  checksum: 10/805d77c5bed73b706bcdceb9b804fd7f9ad392e1b758b8ce13bc64915768872622943ade9f592234bb29fcc2d7b87dd3e9beadd96561ee0a8dcc0beff50f459a
+  checksum: 10/4a75465e7a35ffae8ae1f504ca8b2e9050090c637150de733ab5650e4b49e92c114e71296b8f23be944db7dd480ab675dd35731ee0c3cd8e3ef6e858f1eb9342
   languageName: node
   linkType: hard
 
@@ -1756,16 +1756,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^4.25.0":
-  version: 4.25.0
-  resolution: "wrangler@npm:4.25.0"
+"wrangler@npm:^4.26.0":
+  version: 4.26.0
+  resolution: "wrangler@npm:4.26.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.4.0"
-    "@cloudflare/unenv-preset": "npm:2.3.3"
+    "@cloudflare/unenv-preset": "npm:2.4.1"
     blake3-wasm: "npm:2.1.5"
     esbuild: "npm:0.25.4"
     fsevents: "npm:~2.3.2"
-    miniflare: "npm:4.20250712.0"
+    miniflare: "npm:4.20250712.2"
     path-to-regexp: "npm:6.3.0"
     unenv: "npm:2.0.0-rc.17"
     workerd: "npm:1.20250712.0"
@@ -1780,7 +1780,7 @@ __metadata:
   bin:
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/10bbda3a613c3550bf301e6a38989d63b0c8f1e500d6e9dfed22d81d984546d6cb79bfdef871e902d5a33ad6b1e5bb8fb5619868904d521404b9bcdad60df91d
+  checksum: 10/0566f8ccdbba0ae31cab9f6fb36a1c3aea36cf63a64c0cc7a455ccf1e3a6e1f4c999d522603142b1b0c6f026a27c8dbb29125118cfa73b54175d7dfc6f531a3a
   languageName: node
   linkType: hard
 
