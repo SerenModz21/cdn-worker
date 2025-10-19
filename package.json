@@ -7,13 +7,13 @@
         "deploy": "wrangler deploy"
     },
     "dependencies": {
-        "hono": "^4.9.11",
+        "hono": "^4.10.1",
         "nanoid": "^5.1.6"
     },
     "devDependencies": {
         "@cloudflare/workers-types": "^4.20251011.0",
         "typescript": "^5.9.3",
-        "wrangler": "^4.42.2"
+        "wrangler": "^4.43.0"
     },
     "packageManager": "yarn@4.10.3"
 }
