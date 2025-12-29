@@ -15,7 +15,7 @@ app.get("/:key", cache(), async (c) => {
 
     const object = await c.env.CDN_BUCKET.get(key);
     if (!object) {
-        return c.json({ success:false, error: "Media not found" });
+        return c.json({ success: false, error: "Media not found" }, 404);
     }
 
     const data = await object.arrayBuffer();
@@ -71,7 +71,7 @@ app.delete("/:key", auth(), async (c) => {
 
     const object = await c.env.CDN_BUCKET.get(key);
     if (!object) {
-        return c.json({ success:false, error: "Media not found" });
+        return c.json({ success: false, error: "Media not found" }, 404);
     }
 
     await c.env.CDN_BUCKET.delete(key);
