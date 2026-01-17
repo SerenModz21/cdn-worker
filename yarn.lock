@@ -62,10 +62,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:^4.20260108.0":
-  version: 4.20260111.0
-  resolution: "@cloudflare/workers-types@npm:4.20260111.0"
-  checksum: 10/aa37ae9f99400349621236adc746cd80f2943404dcc7bd3fc007404a7e2f984be132f0c45c8b459b06489d57f178fbd163029b14d25d0634e9b3af70d11fe778
+"@cloudflare/workers-types@npm:^4.20260114.0":
+  version: 4.20260117.0
+  resolution: "@cloudflare/workers-types@npm:4.20260117.0"
+  checksum: 10/5410613de34f0774497786c117f72d481c911a3a25534ea3fac397b0b0345ec748e18436e0b5834897e61296aba7c3a45df2a0be0652271e4c4bbeb393a27d7e
   languageName: node
   linkType: hard
 
@@ -668,7 +668,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cdn@workspace:."
   dependencies:
-    "@cloudflare/workers-types": "npm:^4.20260108.0"
+    "@cloudflare/workers-types": "npm:^4.20260114.0"
     hono: "npm:^4.11.4"
     nanoid: "npm:^5.1.6"
     typescript: "npm:^5.9.3"
