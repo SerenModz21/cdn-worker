@@ -706,7 +706,7 @@ __metadata:
     hono: "npm:^4.11.4"
     nanoid: "npm:^5.1.6"
     typescript: "npm:^5.9.3"
-    wrangler: "npm:^4.59.1"
+    wrangler: "npm:^4.59.2"
   languageName: unknown
   linkType: soft
 
@@ -1712,7 +1712,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^4.59.1":
+"wrangler@npm:^4.59.2":
   version: 4.59.2
   resolution: "wrangler@npm:4.59.2"
   dependencies:
