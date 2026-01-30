@@ -2,6 +2,8 @@
 
 A simple CDN made using Cloudflare Workers, Cloudflare R2, and Hono.
 
+[![Deploy to Cloudflare](https://deploy.workers.cloudflare.com/button)](https://deploy.workers.cloudflare.com/?url=https://github.com/SerenModz21/cdn-worker)
+
 ## Prerequisites
 - A Cloudflare account
 - R2 Plan (starts of free)
@@ -33,10 +35,6 @@ Users can be added via your Cloudflare dashboard by going to "Storage & Database
 #### How do I use a custom domain?
 
 To use a custom domain, you will have to go to your Cloudflare dashboard, click on the "Workers & Pages" page and then click on the CDN worker. Once you've done this, you can click "Settings" at the top, where you should see "Domains & Routes". Next, you will click the "+ Add" button on the right, followed by "Custom Domain". Here you will enter one of your domains that you have setup to use Cloudflare. For example, you can enter something like `cdn.mydomain.com`.
-
-#### What happened to the `Deploy to Workers` / `Deploy to Cloudflare` button?
-
-I have decided to remove it because it cannot create a KV namespace or an R2 bucket for you, and thus results in the deploy failing, which I was not aware of originally. It would be great if it could do that and update [wrangler.toml](/wrangler.toml) for you, or at least read the KV namespace ID from environment variables. However, that is not the case.
 
 #### What if I need help?
 
