@@ -704,7 +704,7 @@ __metadata:
   dependencies:
     "@cloudflare/workers-types": "npm:^4.20260312.1"
     hono: "npm:^4.12.8"
-    nanoid: "npm:^5.1.6"
+    nanoid: "npm:^5.1.7"
     typescript: "npm:^5.9.3"
     wrangler: "npm:^4.72.0"
   languageName: unknown
@@ -1232,12 +1232,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^5.1.6":
-  version: 5.1.6
-  resolution: "nanoid@npm:5.1.6"
+"nanoid@npm:^5.1.7":
+  version: 5.1.7
+  resolution: "nanoid@npm:5.1.7"
   bin:
     nanoid: bin/nanoid.js
-  checksum: 10/4109dbcf596d7f297a9b42f459b8f01694a03ebbdd2f41408d963ad54e5ec7234cbe7b4acad137751f31add11bb4fb3415a3e688082516745812811f05570014
+  checksum: 10/9ca13b1e87c61b21afaa578f40afbb6488fbc24609c34bba744941f9f56feb5b416ea7dfcc1ec4927a8c0f52e5ea755633662dbd58b9e87fd7899c1d7b242ed6
   languageName: node
   linkType: hard
 
