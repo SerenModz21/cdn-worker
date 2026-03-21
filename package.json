@@ -8,7 +8,7 @@
     },
     "dependencies": {
         "hono": "^4.12.8",
-        "nanoid": "^5.1.6"
+        "nanoid": "^5.1.7"
     },
     "devDependencies": {
         "@cloudflare/workers-types": "^4.20260312.1",
