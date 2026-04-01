@@ -25,18 +25,18 @@ export function cache(): Middleware {
 		const response = await cache.match(req);
 
 		if (response) {
-			if (c.req.header("If-None-Match") === response.headers.get("ETag")) {
-				return new Response(null, {
-					status: 304,
-					statusText: "Not Modified",
-					headers: response.headers,
-				});
-			}
-
 			// headers are immutable, so we need to clone the headers
 			// to add the Accept-Ranges header for range requests
 			const headers = new Headers(response.headers);
 			headers.set("Accept-Ranges", "bytes");
+
+			if (c.req.header("If-None-Match") === response.headers.get("ETag")) {
+				return new Response(null, {
+					status: 304,
+					statusText: "Not Modified",
+					headers,
+				});
+			}
 
 			return new Response(response.body, {
 				status: response.status,
