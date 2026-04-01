@@ -1,8 +1,8 @@
 import { Hono } from "hono";
 import { nanoid } from "nanoid";
 
-import { cacheControl, getFileExt, idLength, type Options } from "./utils";
 import { cache, auth } from "./middleware";
+import { cacheControl, getFileExt, idLength, type Options } from "./utils";
 
 const app = new Hono<Options>();
 
