@@ -3,7 +3,7 @@
 		"target": "ESNext",
 		"module": "ESNext",
 		"lib": ["ESNext"],		
-		"moduleResolution": "node",
+		"moduleResolution": "bundler",
 		"types": ["@cloudflare/workers-types"],
 		"resolveJsonModule": true,
 		"allowSyntheticDefaultImports": true,
