@@ -5,26 +5,28 @@ import type { MiddlewareHandler } from "hono";
 export const cacheControl = "public, max-age=31536000, s-maxage=7200";
 
 export function idLength(query: string | undefined, def: number) {
-    const id = query ? parseInt(query) : null;
-    if (!id || isNaN(id)) return def;
-    return id;
+	if (!query || !/^\d+$/.test(query)) return def;
+
+	const num = Number.parseInt(query, 10);
+	if (!Number.isSafeInteger(num) || num < 1) return def;
+	return num;
 }
 
 export function getFileExt(filename: string) {
-    const index = filename.lastIndexOf(".");
-    if (index <= 0) return "";
-    return filename.slice(index);
+	const index = filename.lastIndexOf(".");
+	if (index <= 0) return "";
+	return filename.slice(index);
 }
 
 export type Options = {
-    Bindings: {
-        CDN_BUCKET: R2Bucket;
-        CDN_USERS: KVNamespace;
-        REDIRECT_URL?: string;
-    };
-    Variables: {
-        user: string;
-    };
+	Bindings: {
+		CDN_BUCKET: R2Bucket;
+		CDN_USERS: KVNamespace;
+		REDIRECT_URL?: string;
+	};
+	Variables: {
+		user: string;
+	};
 };
 
 export type Middleware = MiddlewareHandler<Options>;

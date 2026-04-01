@@ -47,30 +47,30 @@ If you need some help, I can try my best to help, but I cannot guarantee anythin
 
 ## HTTP Routes
 
-Route          | Description
----------------|-------------
-`GET /`        | Redirects to my website by default. However, you can change it inside [wrangler.toml](/wrangler.toml#L20).
-`GET /:key`    | Displays the specified media that has been uploaded publicly.
-`POST /upload` | Uploads media to the CDN. The `Access-Token` header is required!
-`DELETE /:key` | Deletes media with the given key from the CDN. The `Access-Token` header is required!
+| Route          | Description                                                                                                |
+| -------------- | ---------------------------------------------------------------------------------------------------------- |
+| `GET /`        | Redirects to my website by default. However, you can change it inside [wrangler.toml](/wrangler.toml#L20). |
+| `GET /:key`    | Displays the specified media that has been uploaded publicly.                                              |
+| `POST /upload` | Uploads media to the CDN. The `Access-Token` header is required!                                           |
+| `DELETE /:key` | Deletes media with the given key from the CDN. The `Access-Token` header is required!                      |
 
 ### ShareX Config Example
 
 ```json
 {
-  "Version": "14.0.1",
-  "Name": "cdn",
-  "DestinationType": "ImageUploader, TextUploader, FileUploader",
-  "RequestMethod": "POST",
-  "RequestURL": "https://your.domain/upload",
-  "Headers": {
-    "Access-Token": "Recommended to be 64+ characters"
-  },
-  "Body": "MultipartFormData",
-  "FileFormName": "image",
-  "URL": "{json:url}",
-  "DeletionURL": "{json:url}",
-  "ErrorMessage": "{json:error}"
+    "Version": "14.0.1",
+    "Name": "cdn",
+    "DestinationType": "ImageUploader, TextUploader, FileUploader",
+    "RequestMethod": "POST",
+    "RequestURL": "https://your.domain/upload",
+    "Headers": {
+        "Access-Token": "Recommended to be 64+ characters"
+    },
+    "Body": "MultipartFormData",
+    "FileFormName": "image",
+    "URL": "{json:url}",
+    "DeletionURL": "{json:url}",
+    "ErrorMessage": "{json:error}"
 }
 ```
 
