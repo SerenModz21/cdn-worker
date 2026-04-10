@@ -836,7 +836,7 @@ __metadata:
   resolution: "cdn@workspace:."
   dependencies:
     "@cloudflare/workers-types": "npm:^4.20260402.1"
-    hono: "npm:^4.12.10"
+    hono: "npm:^4.12.12"
     nanoid: "npm:^5.1.7"
     oxfmt: "npm:^0.43.0"
     typescript: "npm:^6.0.2"
@@ -1124,10 +1124,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hono@npm:^4.12.10":
-  version: 4.12.10
-  resolution: "hono@npm:4.12.10"
-  checksum: 10/0e27311bec761e5197039d8b307cb3f2d31d5df4c9c17a36ab63ffbaec703ae214d158f495bac651e0264c4110d7bbfcebdeda5c1caaada194fe6f15c89a214f
+"hono@npm:^4.12.12":
+  version: 4.12.12
+  resolution: "hono@npm:4.12.12"
+  checksum: 10/760617935cbc40fb20f2ffb4cbd5d59c3578a6838700be5f89a636a287bce59195d08f8e8e3551ca907796110457fb276327c155289d3776c151ed74ee02270f
   languageName: node
   linkType: hard
 
