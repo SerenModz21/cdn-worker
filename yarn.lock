@@ -840,7 +840,7 @@ __metadata:
     nanoid: "npm:^5.1.7"
     oxfmt: "npm:^0.44.0"
     typescript: "npm:^6.0.2"
-    wrangler: "npm:^4.81.0"
+    wrangler: "npm:^4.81.1"
   languageName: unknown
   linkType: soft
 
@@ -1911,7 +1911,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^4.81.0":
+"wrangler@npm:^4.81.1":
   version: 4.81.1
   resolution: "wrangler@npm:4.81.1"
   dependencies:
