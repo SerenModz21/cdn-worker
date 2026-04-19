@@ -19,5 +19,5 @@
 		"typescript": "^6.0.2",
 		"wrangler": "^4.83.0"
 	},
-	"packageManager": "yarn@4.13.0"
+	"packageManager": "yarn@4.14.0"
 }
