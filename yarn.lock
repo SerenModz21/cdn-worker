@@ -60,7 +60,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:^4.20260423.1":
+"@cloudflare/workers-types@npm:4.20260426.1":
   version: 4.20260426.1
   resolution: "@cloudflare/workers-types@npm:4.20260426.1"
   checksum: 10/7fd5b0415ef45177d396893762467e19f7948f95a727b9925c214fc6d7ec813be0a8484473495ca9fcce6ec8dcda8e6aa438a7cdeec0972d05e75e34525ce0fb
@@ -835,12 +835,12 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cdn@workspace:."
   dependencies:
-    "@cloudflare/workers-types": "npm:^4.20260423.1"
+    "@cloudflare/workers-types": "npm:4.20260426.1"
     hono: "npm:^4.12.14"
     nanoid: "npm:^5.1.9"
-    oxfmt: "npm:^0.46.0"
-    typescript: "npm:^6.0.3"
-    wrangler: "npm:^4.84.1"
+    oxfmt: "npm:0.46.0"
+    typescript: "npm:6.0.3"
+    wrangler: "npm:4.85.0"
   languageName: unknown
   linkType: soft
 
@@ -1413,7 +1413,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"oxfmt@npm:^0.46.0":
+"oxfmt@npm:0.46.0":
   version: 0.46.0
   resolution: "oxfmt@npm:0.46.0"
   dependencies:
@@ -1809,7 +1809,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^6.0.3":
+"typescript@npm:6.0.3":
   version: 6.0.3
   resolution: "typescript@npm:6.0.3"
   bin:
@@ -1819,7 +1819,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^6.0.3#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>":
   version: 6.0.3
   resolution: "typescript@patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>::version=6.0.3&hash=5786d5"
   bin:
@@ -1911,7 +1911,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:^4.84.1":
+"wrangler@npm:4.85.0":
   version: 4.85.0
   resolution: "wrangler@npm:4.85.0"
   dependencies:
