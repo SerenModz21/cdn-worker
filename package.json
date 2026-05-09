@@ -14,10 +14,10 @@
 		"nanoid": "^5.1.11"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "4.20260501.1",
-		"oxfmt": "0.47.0",
+		"@cloudflare/workers-types": "4.20260506.1",
+		"oxfmt": "0.48.0",
 		"typescript": "6.0.3",
-		"wrangler": "4.87.0"
+		"wrangler": "4.88.0"
 	},
 	"packageManager": "yarn@4.14.1"
 }
