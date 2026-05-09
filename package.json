@@ -10,7 +10,7 @@
 		"format": "oxfmt"
 	},
 	"dependencies": {
-		"hono": "^4.12.17",
+		"hono": "^4.12.18",
 		"nanoid": "^5.1.11"
 	},
 	"devDependencies": {
