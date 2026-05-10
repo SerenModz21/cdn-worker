@@ -17,7 +17,7 @@
 		"@cloudflare/workers-types": "4.20260507.1",
 		"oxfmt": "0.48.0",
 		"typescript": "6.0.3",
-		"wrangler": "4.88.0"
+		"wrangler": "4.90.0"
 	},
 	"packageManager": "yarn@4.14.1"
 }
