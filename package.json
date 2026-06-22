@@ -11,13 +11,13 @@
 	},
 	"dependencies": {
 		"hono": "^4.12.26",
-		"nanoid": "^5.1.11"
+		"nanoid": "^5.1.14"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "4.20260617.1",
+		"@cloudflare/workers-types": "4.20260619.1",
 		"oxfmt": "0.55.0",
 		"typescript": "6.0.3",
-		"wrangler": "4.101.0"
+		"wrangler": "4.102.0"
 	},
 	"packageManager": "yarn@4.17.0"
 }
