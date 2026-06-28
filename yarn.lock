@@ -60,10 +60,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@cloudflare/workers-types@npm:4.20260624.1":
-  version: 4.20260624.1
-  resolution: "@cloudflare/workers-types@npm:4.20260624.1"
-  checksum: 10/5fab7837d4cb506e945d66e4459f0476700e33ada8364e514b102496a1cf3e6412dc9d09e22d6c02559a9b83b9da119cae71cad0d60ef6389a3b92b9131c2bfd
+"@cloudflare/workers-types@npm:4.20260625.1":
+  version: 4.20260625.1
+  resolution: "@cloudflare/workers-types@npm:4.20260625.1"
+  checksum: 10/59f89344e5ca48bc4dc78834f211305ac8ee0e3775789610ba2aed159af0703c2a38a08eecba81a81facead0cf5b5ea13c383707e36373b9946c8d970e29e258
   languageName: node
   linkType: hard
 
@@ -719,9 +719,9 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "cdn@workspace:."
   dependencies:
-    "@cloudflare/workers-types": "npm:4.20260624.1"
+    "@cloudflare/workers-types": "npm:4.20260625.1"
     hono: "npm:^4.12.27"
-    nanoid: "npm:^5.1.15"
+    nanoid: "npm:^5.1.16"
     oxfmt: "npm:0.56.0"
     typescript: "npm:6.0.3"
     wrangler: "npm:4.104.0"
@@ -950,7 +950,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nanoid@npm:^5.1.15":
+"nanoid@npm:^5.1.16":
   version: 5.1.16
   resolution: "nanoid@npm:5.1.16"
   bin:
