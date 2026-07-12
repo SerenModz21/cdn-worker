@@ -16,7 +16,7 @@
 	"devDependencies": {
 		"@cloudflare/workers-types": "5.20260708.1",
 		"oxfmt": "0.58.0",
-		"typescript": "6.0.3",
+		"typescript": "7.0.2",
 		"wrangler": "4.109.0"
 	},
 	"packageManager": "yarn@4.17.1"
