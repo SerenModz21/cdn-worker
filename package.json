@@ -11,7 +11,7 @@
 	},
 	"dependencies": {
 		"hono": "^4.12.30",
-		"nanoid": "^5.1.16"
+		"nanoid": "^6.0.0"
 	},
 	"devDependencies": {
 		"@cloudflare/workers-types": "5.20260715.1",
