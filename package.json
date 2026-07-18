@@ -10,12 +10,12 @@
 		"format": "oxfmt"
 	},
 	"dependencies": {
-		"hono": "^4.12.28",
+		"hono": "^4.12.30",
 		"nanoid": "^5.1.16"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "5.20260708.1",
-		"oxfmt": "0.58.0",
+		"@cloudflare/workers-types": "5.20260714.1",
+		"oxfmt": "0.59.0",
 		"typescript": "7.0.2",
 		"wrangler": "4.110.0"
 	},
