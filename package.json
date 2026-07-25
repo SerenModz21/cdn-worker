@@ -10,14 +10,14 @@
 		"format": "oxfmt"
 	},
 	"dependencies": {
-		"hono": "^4.12.30",
+		"hono": "^4.12.31",
 		"nanoid": "^6.0.0"
 	},
 	"devDependencies": {
-		"@cloudflare/workers-types": "5.20260716.1",
-		"oxfmt": "0.59.0",
+		"@cloudflare/workers-types": "5.20260722.1",
+		"oxfmt": "0.60.0",
 		"typescript": "7.0.2",
-		"wrangler": "4.111.0"
+		"wrangler": "4.113.0"
 	},
 	"packageManager": "yarn@4.17.1"
 }
