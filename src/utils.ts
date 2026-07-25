@@ -1,8 +1,7 @@
 import type { MiddlewareHandler } from "hono";
 
-// cache on the browser for a year and cache on cloudflare for 2 hours
 // https://developers.cloudflare.com/cache/about/cache-control#cache-control-directives
-export const cacheControl = "public, max-age=31536000, s-maxage=7200";
+export const cacheControl = "public, max-age=31536000";
 
 export function idLength(query: string | undefined, def: number) {
 	if (!query || !/^\d+$/.test(query)) return def;
