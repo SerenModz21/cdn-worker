@@ -1,0 +1,8 @@
+{
+	"editor.defaultFormatter": "oxc.oxc-vscode",
+	"editor.formatOnSave": true,
+	"sonarlint.connectedMode.project": {
+		"connectionId": "serenmodz21",
+		"projectKey": "SerenModz21_cdn-worker"
+	}
+}
