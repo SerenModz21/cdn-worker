@@ -1,4 +1,4 @@
-import type { Middleware } from "./utils";
+import { doesEtagMatch, type Middleware } from "./utils";
 
 export function auth(): Middleware {
 	return async (c, next) => {
@@ -30,7 +30,7 @@ export function cache(): Middleware {
 			const headers = new Headers(response.headers);
 			headers.set("Accept-Ranges", "bytes");
 
-			if (c.req.header("If-None-Match") === response.headers.get("ETag")) {
+			if (doesEtagMatch(c, headers)) {
 				return new Response(null, {
 					status: 304,
 					statusText: "Not Modified",
