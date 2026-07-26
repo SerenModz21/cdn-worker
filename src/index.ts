@@ -2,7 +2,7 @@ import { Hono } from "hono";
 import { nanoid } from "nanoid";
 
 import { cache, auth } from "./middleware";
-import { cacheControl, getFileExt, idLength, type Options } from "./utils";
+import { cacheControl, getBasename, getFileExt, idLength, type Options } from "./utils";
 
 const app = new Hono<Options>();
 
@@ -10,7 +10,7 @@ app.get("/", (c) => {
 	return c.redirect(c.env.REDIRECT_URL || "https://seren.dev", 301);
 });
 
-app.get("/:key", cache(), async (c) => {
+app.get("/:key{.+$}", cache(), async (c) => {
 	const key = c.req.param("key");
 
 	const object = await c.env.CDN_BUCKET.get(key);
@@ -24,7 +24,7 @@ app.get("/:key", cache(), async (c) => {
 		"Accept-Ranges": "bytes",
 		"Cache-Control": cacheControl,
 		"Content-Type": contentType,
-		"Content-Disposition": `inline; filename="${key}"`,
+		"Content-Disposition": `inline; filename="${getBasename(key)}"`,
 		ETag: object.httpEtag,
 	});
 });
@@ -63,7 +63,7 @@ app.post("/upload", auth(), async (c) => {
 	});
 });
 
-app.delete("/:key", auth(), async (c) => {
+app.delete("/:key{.+$}", auth(), async (c) => {
 	const key = c.req.param("key");
 
 	const object = await c.env.CDN_BUCKET.head(key);

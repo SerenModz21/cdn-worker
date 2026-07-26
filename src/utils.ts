@@ -17,6 +17,11 @@ export function getFileExt(filename: string) {
 	return filename.slice(index);
 }
 
+export function getBasename(filename: string) {
+	if (!filename.includes("/")) return filename;
+	return filename.slice(filename.lastIndexOf("/") + 1);
+}
+
 export function doesEtagMatch(c: Context, responseHeaders: Headers) {
 	const ifNoneMatch = c.req.header("If-None-Match");
 	if (!ifNoneMatch) return false;
