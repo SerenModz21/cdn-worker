@@ -882,7 +882,7 @@ __metadata:
     nanoid: "npm:^6.0.1"
     oxfmt: "npm:0.70.0"
     typescript: "npm:7.0.2"
-    wrangler: "npm:4.136.3"
+    wrangler: "npm:4.137.0"
   languageName: unknown
   linkType: soft
 
@@ -1596,9 +1596,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"wrangler@npm:4.136.3":
-  version: 4.136.3
-  resolution: "wrangler@npm:4.136.3"
+"wrangler@npm:4.137.0":
+  version: 4.137.0
+  resolution: "wrangler@npm:4.137.0"
   dependencies:
     "@cloudflare/kv-asset-handler": "npm:0.5.0"
     "@cloudflare/unenv-preset": "npm:2.16.2"
@@ -1621,7 +1621,7 @@ __metadata:
     cf-wrangler: bin/cf-wrangler.js
     wrangler: bin/wrangler.js
     wrangler2: bin/wrangler.js
-  checksum: 10/ac07a671e641735bb3a74c48898145a732966af9ce75c47acb46b679c94d5bbe25ff70d805d1dc31c3ff8f87a43a3ad27e9a643203defbb2dc16ae11274ff1e2
+  checksum: 10/d9422926204154ebf1ef52f78665115b0e6987e036382b150e3c3588a1ba984611c4e9f7758a6ab0af6bc0a862022d70874350d56f11991451c0f80937878352
   languageName: node
   linkType: hard
 
