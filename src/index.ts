@@ -15,7 +15,7 @@ app.get("/:key{.+$}", cache(), async (c) => {
 
 	const object = await c.env.CDN_BUCKET.get(key);
 	if (!object) {
-		return c.json({ success: false, error: "Media not found" }, 404);
+		return c.json({ error: "Media not found" }, 404);
 	}
 
 	const contentType = object.httpMetadata?.contentType || "application/octet-stream";
@@ -34,11 +34,11 @@ app.post("/upload", auth(), async (c) => {
 	const { image } = await c.req.parseBody();
 
 	if (!image) {
-		return c.json({ success: false, error: "Missing media" }, 400);
+		return c.json({ error: "Missing media" }, 400);
 	}
 
 	if (!(image instanceof File)) {
-		return c.json({ success: false, error: "Invalid media" }, 400);
+		return c.json({ error: "Invalid media" }, 400);
 	}
 
 	const fileWithExt = `${filename}${getFileExt(image.name)}`;
@@ -48,7 +48,7 @@ app.post("/upload", auth(), async (c) => {
 	await c.env.CDN_BUCKET.put(fileWithExt, image.stream(), {
 		httpMetadata: {
 			contentType: image.type,
-			cacheControl: cacheControl,
+			cacheControl,
 		},
 		customMetadata: {
 			"Uploaded-By": c.get("user"),
@@ -56,11 +56,7 @@ app.post("/upload", auth(), async (c) => {
 		},
 	});
 
-	return c.json({
-		success: true,
-		name: filename,
-		url: url,
-	});
+	return c.json({ name: filename, url });
 });
 
 app.delete("/:key{.+$}", auth(), async (c) => {
@@ -68,7 +64,7 @@ app.delete("/:key{.+$}", auth(), async (c) => {
 
 	const object = await c.env.CDN_BUCKET.head(key);
 	if (!object) {
-		return c.json({ success: false, error: "Media not found" }, 404);
+		return c.json({ error: "Media not found" }, 404);
 	}
 
 	await c.env.CDN_BUCKET.delete(key);
@@ -76,15 +72,15 @@ app.delete("/:key{.+$}", auth(), async (c) => {
 	// from testing, deletion with url is faster than deletion with raw request
 	await caches.default.delete(c.req.url);
 
-	return c.json({ success: true, name: key });
+	return c.json({ name: key });
 });
 
 app.onError((error, c) => {
-	return c.json({ success: false, error: error.toString() }, 500);
+	return c.json({ error: error.toString() }, 500);
 });
 
 app.notFound((c) => {
-	return c.json({ success: false, error: "Page not Found" }, 404);
+	return c.json({ error: "Page not Found" }, 404);
 });
 
 export default app;
